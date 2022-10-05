@@ -1,6 +1,3 @@
-from hashlib import new
-from math import gamma
-from operator import ne
 from tkinter import Tk, Canvas
 import random
 
@@ -11,10 +8,16 @@ game = []
 for i in range(60):
     game.append([0] * 60)
 
-for i in range(500):
-    x = random.randint(1, 59)
-    y = random.randint(1, 59)
-    game[x][y] = 1
+# for i in range(500):
+#     x = random.randint(1, 59)
+#     y = random.randint(1, 59)
+#     game[x][y] = 1
+    
+    
+#10 cells inline
+
+for i in range(30, 40):
+    game[i][30] = 1
 
 
 def programLoop():
